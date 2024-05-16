@@ -42,5 +42,17 @@ else
 Console.WriteLine("===================================");
 Console.WriteLine("First non-duplicated letter: ");
 
+string word = "minimum";
+result = Hashtables.GetFirstNondupedLetter(word);
+
+if (result == string.Empty)
+{
+    Console.WriteLine("All letters in word are duplicated.");
+}
+else
+{
+    Console.WriteLine("Letter: " + result);
+}
+
 Console.WriteLine("===================================");
 Console.Read();
